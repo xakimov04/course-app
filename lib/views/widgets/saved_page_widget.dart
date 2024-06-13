@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:online_shop/models/product.dart';
 import 'package:online_shop/viewmodels/product_viewmodel.dart';
 import 'package:online_shop/views/widgets/product_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localization.dart';
 
 class SavedPageWidget extends StatefulWidget {
   ProductViewmodel productViewmodel;
@@ -54,8 +55,8 @@ class _SavedPageWidgetState extends State<SavedPageWidget> {
         }
 
         return data == null || data.isEmpty
-            ? const Center(
-                child: Text("Saved is empty"),
+            ?  Center(
+                child: Text(AppLocalizations.of(context)!.savedempty),
               )
             : GridView.builder(
                 padding: const EdgeInsets.all(8),
@@ -89,7 +90,7 @@ class _SavedPageWidgetState extends State<SavedPageWidget> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ClipRRect(
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(15),
                               topRight: Radius.circular(15),
                             ),

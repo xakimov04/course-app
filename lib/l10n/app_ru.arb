@@ -1,0 +1,23 @@
+{
+    "helloWorld": "Привет, мир!",
+    "apple": "Яблоко",
+    "hello": "Привет, {userName}",
+    "nApples": "{count, plural, =0{яблок нет} = 1{1 яблоко} other {{count} яблок}}",
+    "appHome": "Главная",
+    "contact" : "Контакты",
+    "calls" : "Телефон",
+    "people" : "Люди рядом",
+    "save" : "Сохраненные сообщения",
+    "invite" : "Пригласить друзей",
+    "features" : "Особенности",
+    "appCart": "Корзина",
+    "appSaved": "Сохранено",
+    "appProfile": "Профиль",
+    "settings": "Настройки",
+    "mode": "{mode} режим",
+    "nightMode": "Ночной режим",
+    "lightMode": "Дневной режим",
+    "savedempty": "Сохраненных нет",
+    "cartempty": "Корзина пуста",
+    "language": "Выбрать язык"
+}

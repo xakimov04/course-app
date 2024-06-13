@@ -8,6 +8,7 @@ import 'package:online_shop/views/widgets/custom_drawer.dart';
 import 'package:online_shop/views/widgets/home_widget.dart';
 import 'package:online_shop/views/widgets/saved_page_widget.dart';
 import 'package:online_shop/views/widgets/search_view_delegate.dart';
+import 'package:flutter_gen/gen_l10n/app_localization.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -136,9 +137,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         centerTitle: true,
-        title: const Text(
-          "Courses",
-          style: TextStyle(
+        title:  Text(
+         AppLocalizations.of(context)!.appHome,
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 20,
             fontWeight: FontWeight.bold,

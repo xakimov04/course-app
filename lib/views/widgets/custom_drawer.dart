@@ -1,7 +1,10 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import 'package:online_shop/views/screens/home_page.dart';
 import 'package:online_shop/views/screens/settings_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localization.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({
@@ -55,7 +58,7 @@ class SpiderDrawer extends StatelessWidget {
           const DrawerWidget(),
           ListTile(
             leading: const Icon(Icons.home_outlined),
-            title: const Text("Home Page"),
+            title: Text(AppLocalizations.of(context)!.appHome),
             onTap: () {
               Navigator.pushReplacement(
                 context,
@@ -67,27 +70,27 @@ class SpiderDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.person_outline),
-            title: const Text("Contacts"),
+            title: Text(AppLocalizations.of(context)!.contact),
             onTap: () {},
           ),
           ListTile(
             leading: const Icon(Icons.phone_outlined),
-            title: const Text("Calls"),
+            title: Text(AppLocalizations.of(context)!.calls),
             onTap: () {},
           ),
           ListTile(
             leading: const Icon(Icons.radar_outlined),
-            title: const Text("People Nearby"),
+            title:  Text(AppLocalizations.of(context)!.people),
             onTap: () {},
           ),
           ListTile(
             leading: const Icon(Icons.bookmark_border),
-            title: const Text("Saved Messages"),
+            title:  Text(AppLocalizations.of(context)!.save),
             onTap: () {},
           ),
           ListTile(
             leading: const Icon(Icons.settings_outlined),
-            title: const Text("Settings"),
+            title: Text(AppLocalizations.of(context)!.settings),
             onTap: () {
               Navigator.push(
                 context,
@@ -100,12 +103,12 @@ class SpiderDrawer extends StatelessWidget {
           const Divider(color: Colors.black),
           ListTile(
             leading: const Icon(Icons.person_add_outlined),
-            title: const Text("Invite Friends"),
+            title:  Text(AppLocalizations.of(context)!.invite),
             onTap: () {},
           ),
           ListTile(
             leading: const Icon(Icons.help_outline),
-            title: const Text("Telegram Features"),
+            title:  Text(AppLocalizations.of(context)!.features),
             onTap: () {},
           ),
         ],
